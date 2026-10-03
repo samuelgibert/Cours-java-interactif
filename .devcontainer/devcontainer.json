@@ -4,7 +4,8 @@
   "features": {
     "ghcr.io/devcontainers/features/python:1": {}
   },
-  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "onCreateCommand": "bash .devcontainer/setup.sh",
+  "waitFor": "onCreateCommand",
   "customizations": {
     "vscode": {
       "extensions": ["ms-toolsai.jupyter", "vscjava.vscode-java-pack"]
